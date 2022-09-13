@@ -76,26 +76,43 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+ *your roll no :212221230014
+ * your name:Chevula.Naga durga 
+ * department and year: AI &DS and 2 nd year 
+```
+int sensorvalue=A0;
+int newton;
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+  
+{
+
+  sensorvalue=analogRead(A0);
+   int newton=map(sensorvalue,0,466,0,10);
+  Serial.print("Raw value =");
+  Serial.println(sensorvalue);
+  Serial.print("force=");
+  Serial.println(newton);
+  delay(1000);
+}
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
+ ```
  
  
  
  
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
+ 
+ 
+ 
+
+![output](./s.2.png)
 
 
 ### TABLE -02 standard deviation table 
@@ -115,7 +132,9 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
 
-
+### OUTPUT
+![output](./ex3.1.png)
+![output](./s.png)
 
 
 
